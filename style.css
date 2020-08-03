@@ -1,0 +1,84 @@
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 65px;
+    padding: 2px;
+    margin-bottom: 10px;
+    font-size:  14px;
+    background: darkslategray;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    top: 200px;
+    left:50px;}
+
+body{
+    background-color: off-white;
+ }
+
+ svg {
+    background-color: white;
+	font-family: Georgia;
+ }
+ 
+label {
+  color: red;
+  padding: 8px;
+}
+
+
+.axis line{
+stroke: #000000;
+stroke-width: 0.5;
+shape-rendering: crispEdges;
+}
+
+
+
+/* axis contour */
+.axis path {
+stroke: #000000;
+stroke-width: 0.7;
+shape-rendering: crispEdges;
+}
+
+
+/* axis text */
+.axis text {
+fill: #000000;
+font-family: Arial;
+font-size: 40%;
+font-color: black;
+}
+
+/* LINE CHART */
+path {
+fill: none;
+stroke: #ed3700;
+}
+
+path.line-0 {
+fill: none;
+stroke: #663300;
+}
+
+path.line-1 {
+fill: none;
+stroke: #808080;
+stroke-dasharray: 2;
+}
+
+path.line-2 {
+fill: none;
+stroke: #ff0000;
+stroke-dasharray: 6;
+}
+
+.serie_label {
+fill: #2b2929;
+font-family: Georgia;
+//font-size: 80%;
+font-size: 40%;
+}
