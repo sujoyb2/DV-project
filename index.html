@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<head>
-<meta charset="utf-8">
+<html>
    <tittle>
       <h1>
-         <center> India Covid Report</center>
+         <center> India Covid Report - Drill down!</center>
       </h1>
    </tittle>
-<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
-</head>
-<body onload='loadOverviewData()'>
+   <head >
+      <link rel="stylesheet" href="style.css">
+      </link>
+      <script src="https://d3js.org/d3.v5.min.js" type="text/javascript"></script>
+      <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+   </head>
+   <body onload='initCountryData()'>
          <div id="tooltip"></div>
 
     <h1>
-	<div id="title_narrative">India - Covid</div>
+	<div id="title_narrative">India - Covid - Drill Down!</div>
    </h1>
    
    <h4>
@@ -26,16 +29,28 @@ State level data comes from Ministry of Health & Family Welfare
 <br/>
 Inspiration
 <br/>
-Looking for data based suggestions to stop / delay the spread of virus.
+Looking for data based suggestions to stop / delay the spread of virus
    </h4>
-   <div id="scene0"> </div>
+   <div id="scene1"> </div>
  
- </br>  
-   <div id="scene1_next_page">
-	<button onclick="window.location.href='index2.html';">
-      Next Page
+         <h3>Click on any State data to drill down!</h3>
+      </p>
+      <p>
+      <p></p>
+      </p>
+      <div id="scene2" ></div>
+      <p> 
+      </p>
+      
+      <div id="scene3" style="width:800px; margin:0 auto;"></div>
+      
+       </br>  
+   <div id="prev_page">
+	<button onclick="window.location.href='index.html';">
+      Prev Page
     </button>
    </div>
-<script src="overview.js"></script>
 
-</body>
+	<script src="overview.js"></script>
+   </body>
+</html>
